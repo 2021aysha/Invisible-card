@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	font-family: 'Slabo 27px', serif;
+	height: 100vh;
+	width: 100wh;
+	background:url(image/blue.jpg) center no-repeat;
+}
+.card-wrapper{
+	width: 500px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+	background: url(image/blue.jpg) center no-repeat;
+	border-radius: 10%;
+	overflow: hidden;
+}
+
+.card-wrapper:hover{
+	box-shadow: 0 0 5px black;
+	overflow: hidden;
+}
+.card-wrapper:hover .card{
+	bottom: 0;
+
+
+}
+
+
+.card{
+	position: absolute;
+	bottom: 100%;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(190degree,rgba(0,148,50,.80)60%, rgba(234,32,38,.80)0);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+border-radius: 10%;
+transition: .5s 1s ;
+}
+
+
+.card-img{
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 15px;
+	border: 1px solid #fff;
+	
+	box-shadow: 0px 0px 90px rgba(0,0,0,.9);
+}
+
+
+
+h1{
+font-family: 'Source Code Pro', monospace;
+font-size: 45px;
+font-weight: 300;	
+text-transform: uppercase;
+color: whitesmoke;
+letter-spacing: 3px;
+background: linear-gradient();
+text-align: center;
+padding: 5px 0;
+transform: perspective(1000px) skewX(-10deg) rotateY(20deg);
+}
+
+
+
+.card p{
+	color:whitesmoke;
+	font-size: 19px;
+	width:100% ;
+	padding: 30px 0;
+	font-style: italic;
+	text-align: center;
+	position: relative;
+
+}
+
+
+
+.card p i{
+	color: green;
+	font-size: 15px;
+	
+}
+.card p i:first-child{
+    top:20px;
+    left:0%;  
+    position: absolute;
+}
+
+
+
+.card p i:last-child{
+    top:60%;
+    margin-left:5px;
+    position: absolute;
+}
+
+
+
+.card-icons{
+	margin-top: -10px;
+	margin-bottom: 10px;
+	list-style: none;
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	transition: color .2s;
+}
+
+
+
+.card-icons li{
+	text-decoration: none;
+	width: 29px;
+	border: 1px solid whitesmoke;
+	height: 29px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	display: flex;
+
+}
+.card-icons {
+	font-size: 20px;
+}
+
+
+.card-icons li:hover {
+	border: 1px solid blue;
+}
+
+
+.card-icons li a:hover {
+	color: whitesmoke;
+}
+
+
+.card button{
+    background: green;
+    color:#fff;
+    width:150px;
+    height:35px;
+    border-radius:50px;
+    margin-bottom: 9px;
+    font-size:12px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    box-shadow:0 20px 30px rgba(34, 47, 62,.5);
+    outline:none;
+    cursor: pointer;
+}
+.card button:hover{
+	color: navy;
+	background: linear-gradient(#2e86de,#00d2d3);
+}
